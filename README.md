@@ -1,1 +1,0 @@
-# mapmalatang.github.io
