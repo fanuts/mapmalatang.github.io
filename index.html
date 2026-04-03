@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mala Tang Price Map</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+    <div class="sidebar">
+        <div class="header">
+            <h1 id="title">🍜 แผนที่ราคาหม่าล่าทั่ง</h1>
+            <p id="subtitle" class="subtitle">รอบ ม.ศิลปากร</p>
+
+            <div class="btn-group">
+                <button class="lang-btn active" onclick="changeLanguage('th')">ไทย</button>
+                <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+                <button class="lang-btn" onclick="changeLanguage('zh')">中文</button>
+            </div>
+        </div>
+
+        <div id="list-title" class="list-header">📋 สรุปราคาทุกร้าน (เรียงจากถูกไปแพง)</div>
+
+        <div id="shop-list-container" class="shop-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqfyCYB7zvNT3rnpWKXn0ZRk4J5vmS1n8&callback=initMap"></script>
+
+</body>
+
+</html>
